@@ -1,71 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- font awesome icons -->
-  <script src="https://kit.fontawesome.com/d32d5a1d67.js" crossorigin="anonymous"></script>
+    <title>Frontend Mentor | Ping coming soon page</title>
 
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Karla:wght@400;700&family=Libre+Franklin:wght@300;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-  <div class="card-container">
-    <div class="header-container">
-      <div class="img-container">
-        <img class="logo" src="./images/logo.svg" alt="PING logo">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./src/style.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/d32d5a1d67.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/script.js" defer></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <img class="logo-img" src="./images/logo.svg" alt="PING logo" />
+      <div class="launch-text-container">
+        <h1>We are launching <span class="bold">soon!</span></h1>
+        <div class="subscribe-text">Subscribe and get notified</div>
       </div>
-      <h1>We are launching <span>soon!</span></h1>
-    </div>
-    <div class="subscribe-container">
-      <p>Subscribe and get notified</p>
-      <form class="form" action="#">
-        <div class="email-container">
-          <input
-            id="email"
-            class="email error-border"
-            type="email"
-            placeholder="Your email address"
-            required
-          >
-          <p class="error-message">Please provide a valid email address</p>
+      <div class="notify-container">
+        <form class="form-container" action="#">
+          <div class="input-container">
+            <input
+              id="email"
+              class="email"
+              type="email"
+              placeholder="Your email address..."
+            />
+            <div id="error-message" class="error-message">
+              Please provide a valid email address
+            </div>
+          </div>
+          <button id="notify-button" class="notify-button" type="submit">
+            Notify Me
+          </button>
+        </form>
+      </div>
+      <img
+        class="hero-img"
+        src="./images/illustration-dashboard.png"
+        alt="dashboard img"
+      />
+      <div class="social-container">
+        <div class="social-wrapper">
+          <i class="fa-brands fa-facebook-f fa-sm social-icon"></i>
         </div>
-        <button
-          id="submit-button"
-          type="submit"
-        >Notify Me</button>
-      </form>
+        <div class="social-wrapper">
+          <i class="fa-brands fa-twitter fa-sm social-icon"></i>
+        </div>
+        <div class="social-wrapper">
+          <i class="fa-brands fa-square-instagram fa-sm social-icon"></i>
+        </div>
+      </div>
+      <div class="copyright-text">
+        &copy; Copyright Ping. All rights reserved.
+      </div>
     </div>
-    <div class="graphic-container">
-      <img class="graphic" src="./images/illustration-dashboard.png" alt="illustration dashboard">
-    </div>
-    <div class="socials-container">
-      <i class="fa-brands fa-facebook-f social-icon"></i>
-      <i class="fa-brands fa-twitter social-icon"></i>
-      <i class="fa-brands fa-instagram social-icon"></i>
-    </div>
-    <div class="footer-container">
-      <p>&copy; Copyright Ping. All rights reserved.</p>
-    </div>
-  </div>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-
-  <script src="./index.js"></script>
-</body>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/exchyphen" target="_blank">exc</a>.
+      </p>
+    </footer>
+  </body>
 </html>
